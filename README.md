@@ -1,54 +1,36 @@
-# Eat-Da-Burger
+# Eat Da Burger!
+A Burger Eatin' Application With Node.js/Express/MySQL/Handlebars/Materialize
 
-### Overview (see `sequelize branch`)
+## Description
 
-This app is a burger logger with MySQL, Node, Express, Handlebars and Sequelize, and follows the MVC design pattern.
+This application demonstrates a simple full stack application with a front end implemented with HTML/CSS and elements from the Materialize framework and the backend implemented with Node.js and Express. HTML templating is done with the help of Handlebars.
 
-* Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they'd like to eat.
+The user may enter any burger name to add it to the menu. This also adds the new burger entry into the MySQL database. The initial burger entry is added as *available* on the menu and placed on the left side of the screen. The user may then eat any burger by clicking on it, which moves it into the adjacent column and updates its status accordingly in the database.
 
-* Whenever a user submits a burger's name, the app will display the burger on the left side of the page -- waiting to be devoured.
+## Demo
 
-* Each burger in the waiting area also has a `Devour it!` button. When the user clicks it, the burger will move to the right side of the page with customer.
+The demo of the burger eating application can be found [here](https://secret-lake-55615.herokuapp.com/).
 
-* The app will store every burger in a database, whether devoured or not.
+## Installation
 
-![Image](public/assets/image/eat-da-burger.png)
+To run the application locally, first clone this repository with the following command.
 
-#### Directory structure
+	git clone git@github.com:angrbrd/eat-da-burger.git
+	
+Next, install the application dependencies.
 
-All the recommended files and directories should look like the following structure:
+	cd eat-da-burger
+	npm install
+	
+Finally, run the node server locally.
 
-```
-.
-├── config
-│   └── config.json
-│ 
-├── controllers
-│   └── burgers_controller.js
-│
-├── models
-│   ├── index.js
-│   └── burger.js
-│ 
-├── node_modules
-│ 
-├── package.json
-│
-├── public
-│   ├── assets
-│   │   ├── css
-│   │   │   └── burger_style.css
-│   │   ├── img
-│   │   │   └── ...
-│   │   └── js
-│   │       └── burgers.js
-│   └── test.html
-│
-├── schema.sql
-│
-├── server.js
-│
-└── views
-    ├── index.handlebars
-    └── layouts
-        └── main.handlebars
+	node server
+	
+Now, open the local application on port 3000 at the URL: `http://localhost:3000/`.
+
+**Enjoy and have a burger!**
+
+
+
+
+
